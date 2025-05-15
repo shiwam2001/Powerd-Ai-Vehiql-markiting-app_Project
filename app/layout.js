@@ -9,6 +9,7 @@ import {
   SignedOut,
   UserButton,
 } from '@clerk/nextjs'
+import { Toaster } from "sonner";
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
           <main className="min-h-screen">
             {children}
           </main>
+          <Toaster richColors />
 
           <footer className="bg-blue-50 py-12">
             <div className=" mx-auto text-xl px-4 text-gray-600 text-center">
